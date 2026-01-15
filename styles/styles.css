@@ -15,8 +15,7 @@ body {
 }
 
 .wrapper {
-    width: 100%;
-    max-width: 420px;
+    max-width: 1000px;
     padding: 32px 24px;
     border-radius: 12px;
     background: #c7b7a0;
@@ -24,5 +23,19 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 24px;
+}
+
+.grid {
+    max-width: 960px;
+    width: 100%
+}
+
+.row {
+    display: flex;
+    width: 100%;
+}
+
+.box {
+    box-sizing: border-box;
 }
 
