@@ -1,4 +1,16 @@
 const container = document.querySelector("#grid");
+const btn = document.getElementById("resize");
+
+btn.addEventListener("click", () => {
+    const input = parseInt(prompt("How big do you want the grid to be? (1 - 100)"), 10);
+    if (input < 1 || input > 100) {
+        alert("Input out of range!");
+        return;
+    } else if (input >= 1 && input <= 100) {
+        container.innerHTML = "";
+        grid(input);
+    }
+})
 
 function grid(size) {
     for(let i = 0; i < size; i++) {
@@ -20,4 +32,4 @@ function grid(size) {
     }
 }
 
-grid(100);
+grid(10);
