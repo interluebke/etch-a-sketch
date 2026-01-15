@@ -6,6 +6,8 @@ btn.addEventListener("click", () => {
     if (input < 1 || input > 100) {
         alert("Input out of range!");
         return;
+    } else if (isNaN(input)) {
+        alert("Only numbers between 1 and 100 are allowed.")
     } else if (input >= 1 && input <= 100) {
         container.innerHTML = "";
         grid(input);
