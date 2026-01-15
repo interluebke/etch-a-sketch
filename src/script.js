@@ -1,4 +1,4 @@
-const container = document.querySelector("#grid")
+const container = document.querySelector("#grid");
 
 function grid(size) {
     for(let i = 0; i < size; i++) {
@@ -9,8 +9,8 @@ function grid(size) {
             const newDiv = document.createElement("div");
             newDiv.setAttribute("class", "box");
             newDiv.style.border = "1px solid black";
-            newDiv.style.height = "10px";
-            newDiv.style.width = "10px";
+            newDiv.style.height = "20px";
+            newDiv.style.width = "20px";
             newDiv.style.background = "white";
             newDiv.addEventListener("mouseover", () => newDiv.style.background = "black");
             row.appendChild(newDiv);
